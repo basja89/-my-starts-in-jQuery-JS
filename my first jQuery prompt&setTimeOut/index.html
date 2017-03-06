@@ -1,0 +1,39 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Tytuł strony </title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<section class="jumbotron">
+		<h1 id="głównyNagłówek">Hello, world!</h1>
+
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+		<script>
+			var nowyTekst = prompt("Proszę wpisać swoje imię:");
+			$("#głównyNagłówek").text("Cześć, " + nowyTekst + "!  Bardzo się cieszę, że trafiłeś(aś) do mojego pierwszego kodu jQuery!");
+			$(".jumbotron").append("<p>Jakie jest Twoje hobby?</p>");
+
+			function time() {
+				for (var i = 0; i < 1; i++) {
+					var hobby = prompt("Podaj swoje hobby:");
+					$(".jumbotron").append("<p> Twoje pierwsze hobby: " + hobby + "</p>");
+				}
+			}
+			var opoznioneWywolanie = setTimeout(time, 2000);
+
+			function time2() {
+				for (var y = 0; y < 1; y++) {
+					var hobby2 = prompt("Podaj swoje hobby:");
+					$(".jumbotron").append("<p> Twoje drugie hobby: " + hobby2 + "</p>");
+				}
+			}
+			var opoznioneWywolanie2 = setTimeout(time2, 3000);
+		</script>
+	</section>
+</body>

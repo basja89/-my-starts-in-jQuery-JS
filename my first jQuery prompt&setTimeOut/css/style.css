@@ -1,0 +1,18 @@
+.jumbotron {
+	background-image: url(https://images.pexels.com/photos/231009/pexels-photo-231009.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+p {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 7%;
+	font-size: 40px;
+}
